@@ -65,7 +65,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           child: Text(
                             "Forget Password",
                             style: TextStyle(
-                              color: CustomColors.primaryColor,
+                              color: Colors.red[400],
                             ),
                           )),
                     ),
@@ -79,6 +79,14 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ],
                     ),
+                    SizedBox(height: 109,),
+                    Text("By connecting your account confirm that you agree with our Term and Condition",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.grey
+                      ),
+                    ),
+                    SizedBox(height: 25,),
                   ],
                 ),
               ),
