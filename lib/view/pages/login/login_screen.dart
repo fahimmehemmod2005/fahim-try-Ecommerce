@@ -1,5 +1,9 @@
 import 'package:fahim_try_ecommerce/utils/colors.dart';
+import 'package:fahim_try_ecommerce/view/base/custom_button.dart';
 import 'package:fahim_try_ecommerce/view/base/custom_textfromfield.dart';
+import 'package:fahim_try_ecommerce/view/pages/authentication%20&%20all/signup_screen.dart';
+import 'package:fahim_try_ecommerce/view/pages/home/home_screen.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -65,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           child: Text(
                             "Forget Password",
                             style: TextStyle(
-                              color: Colors.red[400],
+                              color: Colors.red,
                             ),
                           )),
                     ),
@@ -76,17 +80,33 @@ class _LoginScreenState extends State<LoginScreen> {
                         Switch(
                           value: Get.find<AuthController>().isRememberMe,
                           onChanged: controller.onRememberMeChanged,
+                          activeThumbColor: Colors.green,
                         ),
                       ],
                     ),
-                    SizedBox(height: 109,),
-                    Text("By connecting your account confirm that you agree with our Term and Condition",
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.grey
+                    SizedBox(height: 170),
+                    CustomButton(
+                        title: "Login",
+                        onPressed: () => Get.to(() => HomeScreen())),
+                    SizedBox(height: 25),
+                    RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(text: "Don't have an account?",
+                              style: TextStyle(
+                                  color: Colors.black),
+                          ),
+                          TextSpan(text: 'Sign up',
+                          style: TextStyle(
+                            color: CustomColors.primaryColor,
+                          ),
+                          recognizer: TapGestureRecognizer()
+                              ..onTap = () => Get.to(() => SignupScreen())
+                          ),
+                        ],
                       ),
                     ),
-                    SizedBox(height: 25,),
+
                   ],
                 ),
               ),
