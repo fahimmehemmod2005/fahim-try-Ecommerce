@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Application',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: "Manrope",
         primaryColor: CustomColors.primaryColor,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
