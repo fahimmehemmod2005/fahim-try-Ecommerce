@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         primaryColor: CustomColors.primaryColor,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      initialRoute: Routes.SplashScreen,
+      initialRoute: Routes.splashScreen,
       getPages: pages,
     );
   }

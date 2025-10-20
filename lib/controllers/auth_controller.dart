@@ -10,7 +10,7 @@ class AuthController extends GetxController {
     update();
   }
 
-  RxInt secondsRemaining = 30.obs; // initial timer seconds
+  RxInt secondsRemaining = 30.obs;
   RxBool enableResend = false.obs;
   Timer? timer;
 

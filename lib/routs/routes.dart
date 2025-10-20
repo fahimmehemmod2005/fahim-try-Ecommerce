@@ -9,19 +9,19 @@ import '../view/pages/splash/splash_screen.dart';
 
 class Routes{
 
-  static String SplashScreen="/";
-  static String loginScreen="/login_screen";
-  static String HomeScreen="/HomeScreen";
-  static String SignupScreen="/SignupScreen";
-  static String ForgotScreen="/ForgotScreen";
-  static String VerificationScreen="/VerificationScreen";
-  static String NewpasswordScreen="/NewpasswordScreen";
+  static String splashScreen="/";
+  static String loginScreen="/loginScreen";
+  static String homeScreen="/homeScreen";
+  static String signupScreen="/signupScreen";
+  static String forgotScreen="/forgotScreen";
+  static String verificationScreen="/verificationScreen";
+  static String newpasswordScreen="/newpasswordScreen";
 
 }
 
 List<GetPage> pages = [
 
-  GetPage(name: Routes.SplashScreen,
+  GetPage(name: Routes.splashScreen,
       page: ()=> SplashScreen(),
   ),
 
@@ -29,22 +29,22 @@ List<GetPage> pages = [
       page: ()=> LoginScreen(),
   ),
 
-  GetPage(name: Routes.HomeScreen,
+  GetPage(name: Routes.homeScreen,
       page: ()=> HomeScreen()),
 
   GetPage(
-  name: Routes.SignupScreen,
+  name: Routes.signupScreen,
       page: ()=> SignupScreen()),
 
   GetPage(
-      name: Routes.ForgotScreen,
+      name: Routes.forgotScreen,
       page: ()=> ForgotScreen()),
 
   GetPage(
-      name: Routes.VerificationScreen,
+      name: Routes.verificationScreen,
       page: ()=> VerificationScreen()),
 
   GetPage(
-      name: Routes.NewpasswordScreen,
+      name: Routes.newpasswordScreen,
       page: ()=> NewpasswordScreen()),
 ];
