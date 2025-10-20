@@ -102,13 +102,12 @@ class _SignupScreenState extends State<SignupScreen> {
                           .find<AuthController>()
                           .isRememberMe,
                       onChanged: controller.onRememberMeChanged,
-                      activeThumbColor: Colors.green,
+                      activeTrackColor: Colors.green,
                     ),
                   ],
                 ),
                 SizedBox(height: 160,),
                 CustomButton(title: 'Sign up', onPressed: (){
-
                   if (_formKey.currentState!.validate()){
                     Get.toNamed("/loginScreen");
                   }

@@ -91,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           Switch(
                             value: Get.find<AuthController>().isRememberMe,
                             onChanged: controller.onRememberMeChanged,
-                            activeThumbColor: Colors.green,
+                            activeTrackColor: Colors.green,
                           ),
                         ],
                       ),
