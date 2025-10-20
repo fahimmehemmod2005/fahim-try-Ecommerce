@@ -46,7 +46,7 @@ class _ForgotScreenState extends State<ForgotScreen> {
                 ),),
             SizedBox(height: 15,),
             SvgPicture.asset(
-                  "assets/icons/Forgot1.svg",
+                  "assets/icons/Forgot.svg",
             ),
             SizedBox(height: 80,),
             CustomTextFromField(

@@ -54,7 +54,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
             style: TextStyle(fontSize: 28, fontWeight: FontWeight.w600),
           ),
           SizedBox(height: 10),
-          SvgPicture.asset("assets/icons/Forgot1.svg"),
+          SvgPicture.asset("assets/icons/Forgot.svg"),
           SizedBox(height: 60),
           Form(
             key: _formKey,
