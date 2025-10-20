@@ -23,6 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
       Get.offAllNamed(Routes.loginScreen);
     });
   }
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: CustomColors.primaryColor,

@@ -14,9 +14,9 @@ class VerificationScreen extends StatefulWidget {
 }
 
 class _VerificationScreenState extends State<VerificationScreen> {
-  AuthController _authController = Get.find<AuthController>();
-  TextEditingController _pinPutController = TextEditingController();
-  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final AuthController _authController = Get.find<AuthController>();
+  final TextEditingController _pinPutController = TextEditingController();
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
   void initState() {

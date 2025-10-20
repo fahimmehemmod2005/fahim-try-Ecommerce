@@ -2,8 +2,6 @@ import 'package:fahim_try_ecommerce/view/base/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-
 import '../../../utils/colors.dart';
 import '../../base/custom_textfromfield.dart';
 
@@ -16,8 +14,8 @@ class ForgotScreen extends StatefulWidget {
 
 class _ForgotScreenState extends State<ForgotScreen> {
 
-  TextEditingController _emailCtrl = TextEditingController();
-  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final TextEditingController _emailCtrl = TextEditingController();
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {

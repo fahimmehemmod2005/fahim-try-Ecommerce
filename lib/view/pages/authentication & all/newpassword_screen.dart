@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import '../../../utils/colors.dart';
 import '../../base/custom_button.dart';
 import '../../base/custom_textfromfield.dart';
@@ -14,9 +13,9 @@ class NewpasswordScreen extends StatefulWidget {
 
 class _NewpasswordScreenState extends State<NewpasswordScreen> {
 
-  TextEditingController _passCtrl = TextEditingController();
-  TextEditingController _confirmCtrl = TextEditingController();
-  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final TextEditingController _passCtrl = TextEditingController();
+  final TextEditingController _confirmCtrl = TextEditingController();
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {

@@ -1,8 +1,6 @@
 import 'package:fahim_try_ecommerce/view/base/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:get/get_navigation/src/extension_navigation.dart';
 import '../../../controllers/auth_controller.dart';
 import '../../base/custom_textfromfield.dart';
 
@@ -15,10 +13,10 @@ class SignupScreen extends StatefulWidget {
 
 class _SignupScreenState extends State<SignupScreen> {
 
-  TextEditingController _usernameCtrl = TextEditingController();
-  TextEditingController _passCtrl = TextEditingController();
-  TextEditingController _emailCtrl = TextEditingController();
-  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
+  final TextEditingController _usernameCtrl = TextEditingController();
+  final TextEditingController _passCtrl = TextEditingController();
+  final TextEditingController _emailCtrl = TextEditingController();
+  final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
 
   @override
