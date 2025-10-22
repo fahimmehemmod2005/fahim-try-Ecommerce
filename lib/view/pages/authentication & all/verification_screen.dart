@@ -76,7 +76,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                       ),
                       validator: (v){
                         if (v!.length < 4){
-                         return "Please enter your valid code";
+                         return "enter a valid code";
                         }
                         return null;
                       },

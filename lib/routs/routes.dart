@@ -1,5 +1,6 @@
 import 'package:fahim_try_ecommerce/view/pages/authentication%20&%20all/signup_screen.dart';
 import 'package:fahim_try_ecommerce/view/pages/home/home_screen.dart';
+import 'package:fahim_try_ecommerce/view/pages/mainScreen/main_Screen.dart';
 import 'package:get/get.dart';
 import '../view/pages/authentication & all/forgot_screen.dart';
 import '../view/pages/authentication & all/newpassword_screen.dart';
@@ -16,6 +17,8 @@ class Routes{
   static String forgotScreen="/forgotScreen";
   static String verificationScreen="/verificationScreen";
   static String newpasswordScreen="/newpasswordScreen";
+  static String mainScreen="/mainScreen";
+
 
 }
 
@@ -47,4 +50,8 @@ List<GetPage> pages = [
   GetPage(
       name: Routes.newpasswordScreen,
       page: ()=> NewpasswordScreen()),
+
+      GetPage(
+        name: Routes.mainScreen,
+        page: ()=> MainScreen())
 ];

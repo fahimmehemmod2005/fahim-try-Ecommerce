@@ -20,7 +20,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "Manrope",
         primaryColor: CustomColors.primaryColor,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        scaffoldBackgroundColor: Color(0xffFEFEFE),
+        appBarTheme: AppBarTheme(
+          backgroundColor: Color(0xffFEFEFE),
+        ),
+        canvasColor: Color(0xffFEFEFE),
       ),
       initialRoute: Routes.splashScreen,
       getPages: pages,
