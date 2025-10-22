@@ -26,19 +26,25 @@ class SettingsAll extends StatelessWidget {
         child: Column(
           children: [
             ListTile(
-              onTap: (){},
+              onTap: (){
+                Get.toNamed('/termsScreen');
+              },
               leading: SvgPicture.asset('assets/icons/info-empty.svg'),
               title: Text('Terms of Service'),
             ),
             SizedBox(height: 5,),
             ListTile(
-              onTap: (){},
+              onTap: (){
+                Get.toNamed('/privacyScreen');
+              },
               leading: SvgPicture.asset('assets/icons/security-safe.svg'),
               title: Text('Privacy Policy'),
             ),
             SizedBox(height: 5,),
             ListTile(
-              onTap: (){},
+              onTap: (){
+                Get.toNamed('/aboutScreen');
+              },
               leading: SvgPicture.asset('assets/icons/shield-question.svg'),
               title: Text('About Us'),
             ),

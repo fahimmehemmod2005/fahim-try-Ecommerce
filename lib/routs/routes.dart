@@ -1,6 +1,10 @@
+import 'package:fahim_try_ecommerce/settings/about_screen.dart';
+import 'package:fahim_try_ecommerce/settings/privacy_screen.dart';
 import 'package:fahim_try_ecommerce/settings/settings_all.dart';
+import 'package:fahim_try_ecommerce/settings/terms_screen.dart';
 import 'package:fahim_try_ecommerce/view/pages/authentication%20&%20all/signup_screen.dart';
 import 'package:fahim_try_ecommerce/view/pages/home/home_screen.dart';
+import 'package:fahim_try_ecommerce/view/pages/home/view_product.dart';
 import 'package:fahim_try_ecommerce/view/pages/mainScreen/main_Screen.dart';
 import 'package:get/get.dart';
 import '../view/pages/authentication & all/forgot_screen.dart';
@@ -20,6 +24,10 @@ class Routes{
   static String newpasswordScreen="/newpasswordScreen";
   static String mainScreen="/mainScreen";
   static String settingsAll="/settingsAll";
+  static String termsScreen="/termsScreen";
+  static String privacyScreen="/privacyScreen";
+  static String aboutScreen="/aboutScreen";
+  static String viewProduct="/viewProduct";
 
 
 }
@@ -60,4 +68,20 @@ List<GetPage> pages = [
   GetPage(
       name: Routes.settingsAll,
       page: ()=> SettingsAll()),
+
+  GetPage(
+      name: Routes.termsScreen,
+      page: ()=> TermsScreen()),
+
+  GetPage(
+      name: Routes.privacyScreen,
+      page: ()=> PrivacyScreen()),
+
+  GetPage(
+      name: Routes.aboutScreen,
+      page: ()=> AboutScreen()),
+
+  GetPage(
+      name: Routes.viewProduct,
+      page: ()=> ViewProduct()),
 ];

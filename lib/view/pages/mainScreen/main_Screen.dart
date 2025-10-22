@@ -26,7 +26,10 @@ class _MainScreenState extends State<MainScreen> {
     });
   }
 
-  List<Widget> pages = <Widget>[ HomeScreen(), WishList(), CartScreen()
+  List<Widget> pages = <Widget>[
+    HomeScreen(),
+    WishList(),
+    CartScreen()
   ];
 
   @override
