@@ -21,9 +21,9 @@ class _ViewProductState extends State<ViewProduct> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
-          child: SingleChildScrollView(
+          child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 20),
-            child: Column(
+            children: [Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
               Stack(
@@ -126,6 +126,7 @@ class _ViewProductState extends State<ViewProduct> {
                 CustomButton(title: 'Add to Cart', onPressed: (){})
               ],
             ),
+          ],
           ),
         ),
 
