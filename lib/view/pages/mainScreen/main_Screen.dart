@@ -112,7 +112,9 @@ _customDrawer() {
               title: Text("My Cards"),
             ),
             ListTile(
-              onTap: (){},
+              onTap: (){
+                Get.toNamed('/settingsAll');
+              },
               leading: SvgPicture.asset('assets/icons/Setting.svg',),
               title: Text("Settings"),
             ),
