@@ -29,7 +29,8 @@ class _ViewProductState extends State<ViewProduct> {
               Stack(
                 children: [
                   Align(
-                    child: SvgPicture.asset('assets/icons/nike.svg',height: 100,),
+                    child: SvgPicture.asset('assets/icons/nike.svg',
+                      height: 100,),
                   ),
                   Container(
                 height: 250,
@@ -121,6 +122,18 @@ class _ViewProductState extends State<ViewProduct> {
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada eget vitae amet...',
               style: TextStyle(fontSize: 16),
             ),
+
+                Row(
+                  children: [
+                    Text("Total Price",
+                      style: TextStyle(fontSize: 20),),
+                    Spacer(),
+                    Text('\$125',style: TextStyle(fontSize: 24)),
+                  ],
+                ),
+            Text('with VAT,SD',style: TextStyle(
+              color: Colors.grey
+            ),),
           
             SizedBox(height: 10),
                 CustomButton(title: 'Add to Cart', onPressed: (){})

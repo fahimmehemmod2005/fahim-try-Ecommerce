@@ -3,6 +3,7 @@ import 'package:fahim_try_ecommerce/settings/privacy_screen.dart';
 import 'package:fahim_try_ecommerce/settings/settings_all.dart';
 import 'package:fahim_try_ecommerce/settings/terms_screen.dart';
 import 'package:fahim_try_ecommerce/view/pages/authentication%20&%20all/signup_screen.dart';
+import 'package:fahim_try_ecommerce/view/pages/home/components/product_shot.dart';
 import 'package:fahim_try_ecommerce/view/pages/home/home_screen.dart';
 import 'package:fahim_try_ecommerce/view/pages/home/view_product.dart';
 import 'package:fahim_try_ecommerce/view/pages/mainScreen/main_Screen.dart';
@@ -28,6 +29,7 @@ class Routes{
   static String privacyScreen="/privacyScreen";
   static String aboutScreen="/aboutScreen";
   static String viewProduct="/viewProduct";
+  static String productShot="/productShot";
 
 
 }
@@ -84,4 +86,8 @@ List<GetPage> pages = [
   GetPage(
       name: Routes.viewProduct,
       page: ()=> ViewProduct()),
+
+  GetPage(
+      name: Routes.productShot,
+      page: ()=> ProductShot()),
 ];

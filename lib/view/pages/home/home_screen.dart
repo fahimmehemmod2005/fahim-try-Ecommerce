@@ -92,7 +92,13 @@ class _HomeScreenState extends State<HomeScreen> {
             SizedBox(height: 20),
             ChooseBrands(),
             SizedBox(height: 20),
-            CustomTitle(title: "New Arrivals",subTitle: "View All",),
+            CustomTitle(
+              title: "New Arrivals",
+              subTitle: "View All",
+              onTap: (){
+              Get.toNamed('/productShot');
+              },
+            ),
             SizedBox(height: 20),
             MasonryGridView.count(
               crossAxisCount: 2,

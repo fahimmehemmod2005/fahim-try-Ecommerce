@@ -17,7 +17,6 @@ class _VerificationScreenState extends State<VerificationScreen> {
   final AuthController _authController = Get.find<AuthController>();
   final TextEditingController _pinPutController = TextEditingController();
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-
   @override
   void initState() {
     _authController.startTimer();
@@ -74,12 +73,12 @@ class _VerificationScreenState extends State<VerificationScreen> {
                           borderRadius: BorderRadius.circular(15),
                         ),
                       ),
-                      validator: (v){
-                        if (v!.length < 4){
-                         return "enter a valid code";
+                      validator: (value){
+                        if (value!.length<4){
+                          return 'enter a valid code';
                         }
                         return null;
-                      },
+                        },
                     ),
                     SizedBox(height: 130),
                     _authController.enableResend.value ? TextButton(
@@ -99,7 +98,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                               ),
                               children: [
                                 TextSpan(
-                                  text: " resend confirmation code.",
+                                  text: " resend code.",
                                   style: TextStyle(
                                     color: Colors.grey,
                                     fontSize: 20,
