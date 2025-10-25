@@ -19,26 +19,25 @@ class _ProductShotState extends State<ProductShot> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: SvgPicture.asset('assets/icons/nike.svg',height: 40,),
+        title: SvgPicture.asset('assets/icons/nike.svg', height: 40),
         centerTitle: true,
         leading: IconButton(
-            style: IconButton.styleFrom(
-              backgroundColor: Colors.grey[200],
-            ),
-            onPressed: () {
-              Get.back();
-            },
-            icon: Icon(Icons.arrow_back)),
-        actions: [IconButton(
-            style: IconButton.styleFrom(
-              backgroundColor: Colors.grey[200],
-            ),
+          style: IconButton.styleFrom(backgroundColor: Colors.grey[200]),
+          onPressed: () {
+            Get.back();
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
+        actions: [
+          IconButton(
+            style: IconButton.styleFrom(backgroundColor: Colors.grey[200]),
             onPressed: () {
               Get.to(CartScreen());
             },
-            icon: SvgPicture.asset(
-                'assets/icons/cart.svg')),
-        SizedBox(width: 7,)],
+            icon: SvgPicture.asset('assets/icons/cart.svg'),
+          ),
+          SizedBox(width: 7),
+        ],
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -49,19 +48,18 @@ class _ProductShotState extends State<ProductShot> {
               SizedBox(height: 10),
               Row(
                 children: [
-                  Text('365 Items',style: TextStyle(
-                    fontSize: 20,
-                  ),),
+                  Text('365 Items', style: TextStyle(fontSize: 20)),
                   Spacer(),
                   InkWell(
-                    onTap: (){},
+                    onTap: () {},
                     child: SvgPicture.asset('assets/icons/short.svg'),
-                  )
+                  ),
                 ],
               ),
-              Text('in wishlist',style: TextStyle(
-                  color: Colors.grey,fontSize: 15
-              ),),
+              Text(
+                'in wishlist',
+                style: TextStyle(color: Colors.grey, fontSize: 15),
+              ),
               SizedBox(height: 10),
               MasonryGridView.count(
                 crossAxisCount: 2,
@@ -80,12 +78,12 @@ class _ProductShotState extends State<ProductShot> {
                           ClipRRect(
                             borderRadius: BorderRadius.circular(10),
                             child: Image(
-                                height: 200,
-                                width: double.infinity,
-                                image: AssetImage(
-                                  "assets/images/product_image1.png",
-                                ),
-                                fit: BoxFit.cover
+                              height: 200,
+                              width: double.infinity,
+                              image: AssetImage(
+                                "assets/images/product_image1.png",
+                              ),
+                              fit: BoxFit.cover,
                             ),
                           ),
                           Positioned(
@@ -95,10 +93,23 @@ class _ProductShotState extends State<ProductShot> {
                           ),
                         ],
                       ),
-                      Text("Product Name",style: TextStyle(fontSize: 16,fontWeight:FontWeight.w500,),maxLines: 2,overflow: TextOverflow.ellipsis,),
+                      Text(
+                        "Product Name",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                        ),
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                      ),
                       SizedBox(height: 5),
-                      Text("\$120",style: TextStyle(fontSize: 16,fontWeight:FontWeight.bold,),),
-
+                      Text(
+                        "\$120",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ],
                   );
                 },

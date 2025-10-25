@@ -164,16 +164,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
       ),
-
-      actions: [
-        Padding(
-          padding: const EdgeInsets.only(right: 20),
-          child: CircleAvatar(
-            backgroundColor: Color(0xffF5F6FA),
-            child: SvgPicture.asset("assets/icons/cart.svg"),
-          ),
-        ),
-      ],
     );
   }
 }
